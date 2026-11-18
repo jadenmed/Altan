@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Altan | Research peptides, verified</title>
+<meta name="description" content="Third-party tested research peptides with a certificate of analysis for every lot. Sold for laboratory research only.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/tailwind.css">
+<style>
+  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+  .faq-a { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .3s ease; }
+  .faq-open .faq-a { grid-template-rows: 1fr; }
+  .faq-icon::before { content: "+"; }
+  .faq-open .faq-icon::before { content: "\2212"; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+</style>
+</head>
+<body class="font-sans text-ink bg-white antialiased">
+
+<!-- Notice bar -->
+<div class="bg-cream min-h-9 flex items-center justify-center px-4 py-2.5 md:py-0 md:h-9 text-center font-mono text-[10px] md:text-[11px] tracking-[0.8px] uppercase text-muted">
+  For laboratory research use only &nbsp;·&nbsp; Not for human or veterinary use &nbsp;·&nbsp; Buyers must be 21+
+</div>
+
+<!-- Header -->
+<header class="relative">
+  <div class="mx-auto max-w-[1440px] px-5 md:px-10 lg:px-20">
+    <div class="h-[72px] md:h-[88px] grid grid-cols-[auto_1fr_auto] md:grid-cols-[1fr_auto_1fr] items-center gap-4 border-b border-hair">
+      <a href="#top" aria-label="Altan"><img src="assets/logo.svg" width="108" height="39" alt="Altan" class="w-[108px] h-auto"></a>
+      <nav id="nav" class="hidden md:block absolute md:static left-0 right-0 top-[72px] bg-white border-b border-hair md:border-0 px-5 pb-5 md:p-0 z-20" aria-label="Primary">
+        <ul class="flex flex-col md:flex-row md:gap-7 text-base md:text-sm font-medium">
+          <li><a class="block py-3.5 md:py-0 hover:opacity-60" href="#shop">Shop</a></li>
+          <li><a class="block py-3.5 md:py-0 hover:opacity-60" href="#test-results">Test results</a></li>
+          <li><a class="block py-3.5 md:py-0 hover:opacity-60" href="#compliance">About</a></li>
+          <li><a class="block py-3.5 md:py-0 hover:opacity-60" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="justify-self-end text-sm font-medium md:col-start-3 col-start-2">Cart (0)</a>
+      <button id="navToggle" class="md:hidden p-2 -mr-2" aria-controls="nav" aria-expanded="false" aria-label="Menu">
+        <span class="block w-[22px] h-0.5 bg-ink my-[5px]"></span><span class="block w-[22px] h-0.5 bg-ink my-[5px]"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- Hero -->
+<section id="top" class="py-6 md:py-10">
+  <div class="mx-auto max-w-[1440px] px-5 md:px-10 lg:px-20">
+    <div class="grid md:grid-cols-2 lg:grid-cols-[1fr_minmax(0,600px)] gap-8 md:gap-12 lg:gap-20 items-center">
+      <div class="order-2 md:order-1">
+        <p class="font-mono text-xs tracking-[1px] uppercase text-brand mb-5">Research peptides &nbsp;·&nbsp; Lab tested</p>
+        <h1 class="font-medium text-[clamp(60px,7.78vw,112px)] leading-[0.946] tracking-[-0.04em] mb-9">Peptides,<br>verified.</h1>
+        <p class="text-[17px] md:text-[19px] leading-7 text-muted max-w-[520px] mb-8 md:mb-[52px]">Third-party tested compounds with a certificate of analysis for every lot. Sold for laboratory research only.</p>
+        <div class="flex flex-wrap items-center gap-6 md:gap-10 mb-9">
+          <a href="#shop" class="inline-flex items-center justify-center h-14 px-8 rounded-full bg-brand text-white font-medium hover:opacity-90 transition">Shop peptides</a>
+          <a href="#test-results" class="font-medium inline-flex gap-2 items-center hover:opacity-70">View test results <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <p class="text-[13px] text-muted">For research use only. Not for human or veterinary use.</p>
+      </div>
+      <div class="order-1 md:order-2 rounded-[28px] overflow-hidden aspect-[600/680] bg-white">
+        <img src="assets/hero.jpg" width="600" height="680" alt="" class="w-full h-full object-cover" fetchpriority="high">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Shop -->
+<section id="shop" class="border-t border-hair pt-16 md:pt-[122px] pb-16 md:pb-44">
+  <div class="mx-auto max-w-[1440px] px-5 md:px-10 lg:px-20">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+      <div>
+        <span class="block font-mono text-xs tracking-[1px] uppercase text-brand mb-3">Shop</span>
+        <h2 class="font-medium text-[clamp(38px,3.89vw,56px)] leading-[1.07] tracking-[-0.036em]">Research peptides</h2>
+      </div>
+      <a href="#" class="font-medium inline-flex gap-2 items-center hover:opacity-70">View all <span aria-hidden="true">&rarr;</span></a>
+    </div>
+
+    <ul id="products" class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8"></ul>
+
+    <p class="mt-[60px] text-[13px] text-muted">All products are sold strictly for in vitro laboratory research. Not for human or veterinary use.</p>
+  </div>
+</section>
+
+<!-- Compliance -->
+<section id="compliance" class="bg-cream py-16 md:py-28">
+  <div class="mx-auto max-w-[1440px] px-5 md:px-10 lg:px-20">
+    <div class="grid lg:grid-cols-[1fr_640px] gap-14 lg:gap-20 items-start">
+      <div>
+        <span class="block font-mono text-xs tracking-[1px] uppercase text-brand mb-3">Compliance</span>
+        <h2 class="font-medium text-[clamp(38px,3.89vw,56px)] leading-[1.07] tracking-[-0.036em]">Made for research.<br>Labeled for research.</h2>
+        <p class="mt-[30px] max-w-[430px] text-[17px] leading-[26px] text-muted">Every Altan product is sold for in vitro laboratory use only. We do not provide dosing, protocols or medical guidance.</p>
+        <a href="#" class="mt-3 font-medium inline-flex gap-2 items-center hover:opacity-70">Read the research use agreement <span aria-hidden="true">&rarr;</span></a>
+      </div>
+      <ol class="border-b border-hair2">
+        <li class="grid grid-cols-[48px_1fr] md:grid-cols-[80px_1fr] min-h-28 pt-[26px] pb-[22px] border-t border-hair2">
+          <span class="font-mono text-xs text-brand pt-2.5">01</span>
+          <div><h3 class="font-medium text-2xl leading-[31px]">Research use only</h3><p class="mt-1.5 text-[15px] leading-5 text-muted max-w-[540px]">Not for human or veterinary use. Not a drug, supplement or food.</p></div>
+        </li>
+        <li class="grid grid-cols-[48px_1fr] md:grid-cols-[80px_1fr] min-h-28 pt-[26px] pb-[22px] border-t border-hair2">
+          <span class="font-mono text-xs text-brand pt-2.5">02</span>
+          <div><h3 class="font-medium text-2xl leading-[31px]">21+ buyers</h3><p class="mt-1.5 text-[15px] leading-5 text-muted max-w-[540px]">Every buyer confirms their age and accepts the research use terms at checkout.</p></div>
+        </li>
+        <li class="grid grid-cols-[48px_1fr] md:grid-cols-[80px_1fr] min-h-28 pt-[26px] pb-[22px] border-t border-hair2">
+          <span class="font-mono text-xs text-brand pt-2.5">03</span>
+          <div><h3 class="font-medium text-2xl leading-[31px]">Documented lots</h3><p class="mt-1.5 text-[15px] leading-5 text-muted max-w-[540px]">Each lot is tested by an independent lab and ships with its certificate of analysis.</p></div>
+        </li>
+        <li class="grid grid-cols-[48px_1fr] md:grid-cols-[80px_1fr] min-h-28 pt-[26px] pb-[22px] border-t border-hair2">
+          <span class="font-mono text-xs text-brand pt-2.5">04</span>
+          <div><h3 class="font-medium text-2xl leading-[31px]">Not a pharmacy</h3><p class="mt-1.5 text-[15px] leading-5 text-muted max-w-[540px]">Altan is a chemical supplier, not a 503A or 503B compounding facility.</p></div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- Test results lookup -->
+<section id="test-results" class="py-16 md:py-[104px] text-center">
+  <div class="mx-auto max-w-[1440px] px-5 md:px-10 lg:px-20">
+    <span class="block font-mono text-xs tracking-[1px] uppercase text-brand mb-3">Test results</span>
+    <h2 class="font-medium text-[clamp(44px,5vw,72px)] leading-[1.056] tracking-[-0.042em]">Check any lot.</h2>
+    <p class="max-w-[520px] mx-auto mt-7 text-lg leading-7 text-muted">Every lot ships with a certificate of analysis. Enter a lot ID to view it before you order.</p>
+    <form id="coaForm" class="flex items-center justify-between gap-2 max-w-[560px] h-14 md:h-16 mx-auto mt-8 md:mt-11 pl-5 md:pl-7 pr-1.5 bg-white border border-ink/[0.18] rounded-full focus-within:border-brand">
+      <label for="lot" class="sr-only">Lot ID</label>
+      <input id="lot" type="text" autocomplete="off" placeholder="Enter lot ID, for example AL-0925-117" class="flex-1 min-w-0 bg-transparent outline-none text-base placeholder:text-ph">
+      <button type="submit" class="h-11 md:h-[52px] w-[100px] md:w-[130px] rounded-full bg-brand text-white font-medium hover:opacity-90 transition">Search</button>
+    </form>
+    <p id="coaMsg" class="mt-6 text-[13px] text-muted" role="status">Your lot ID is printed on every vial label and invoice.</p>
+  </div>
+</section>
+
+<!-- Offer -->
+<section class="py-10">
+  <div class="mx-auto max-w-[1440px] px-5 md:px-10 lg:px-20">
+    <div class="relative overflow-hidden rounded-[28px] md:rounded-[40px] min-h-[420px] md:min-h-[460px] bg-brand bg-cover bg-center flex flex-col items-center justify-center text-center px-6 py-16" style="background-image:url('assets/offer.jpg')">
+      <div class="absolute inset-0 bg-brand/[0.62]"></div>
+      <div class="relative flex flex-col items-center">
+        <p class="font-mono text-xs tracking-[1px] uppercase text-creamtext/80">First order</p>
+        <h2 class="mt-4 font-medium text-creamtext text-[clamp(44px,5.56vw,80px)] leading-[1.025] tracking-[-0.0375em]">25% off your<br>first order.</h2>
+        <p class="mt-6 text-lg text-creamtext/85 max-w-[760px]">Use code ALTAN25 at checkout. For research use only. Buyers must be 21 or older.</p>
+        <a href="#shop" class="mt-[33px] inline-flex items-center justify-center w-[180px] h-14 rounded-full bg-creamtext text-brand font-medium hover:opacity-90 transition">Shop peptides</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="bg-cream py-16 md:py-28">
+  <div class="mx-auto max-w-[1440px] px-5 md:px-10 lg:px-20">
+    <div class="grid lg:grid-cols-[1fr_640px] gap-14 lg:gap-20 items-start">
+      <div>
+        <span class="block font-mono text-xs tracking-[1px] uppercase text-brand mb-3">FAQ</span>
+        <h2 class="font-medium text-[clamp(38px,3.89vw,56px)] leading-[1.07] tracking-[-0.036em]">Common<br>questions</h2>
+      </div>
+      <div id="faq-list" class="border-b border-hair2">
+        <div class="faq-item faq-open border-t border-hair2">
+          <h3><button class="faq-q w-full flex justify-between items-start gap-6 pt-[26px] pb-[25px] text-left font-medium text-xl leading-[26px]" aria-expanded="true">
+            <span>Are Altan products for human use?</span><span class="faq-icon w-10 text-right text-2xl font-normal flex-none" aria-hidden="true"></span></button></h3>
+          <div class="faq-a"><div class="overflow-hidden"><p class="pr-14 pb-11 text-[15px] leading-[22px] text-muted">No. Every product is sold strictly for in vitro laboratory research. Products are not for human or veterinary use, and we do not provide dosing or medical guidance.</p></div></div>
+        </div>
+        <div class="faq-item border-t border-hair2">
+          <h3><button class="faq-q w-full flex justify-between items-start gap-6 pt-[26px] pb-[25px] text-left font-medium text-xl leading-[26px]" aria-expanded="false">
+            <span>How do I verify a lot?</span><span class="faq-icon w-10 text-right text-2xl font-normal flex-none" aria-hidden="true"></span></button></h3>
+          <div class="faq-a"><div class="overflow-hidden"><p class="pr-14 pb-11 text-[15px] leading-[22px] text-muted">Enter the lot ID printed on your vial label or invoice in the test results search above to view the certificate of analysis for that lot.</p></div></div>
+        </div>
+        <div class="faq-item border-t border-hair2">
+          <h3><button class="faq-q w-full flex justify-between items-start gap-6 pt-[26px] pb-[25px] text-left font-medium text-xl leading-[26px]" aria-expanded="false">
+            <span>Who can buy from Altan?</span><span class="faq-icon w-10 text-right text-2xl font-normal flex-none" aria-hidden="true"></span></button></h3>
+          <div class="faq-a"><div class="overflow-hidden"><p class="pr-14 pb-11 text-[15px] leading-[22px] text-muted">Buyers must be 21 or older and accept the research use terms at checkout.</p></div></div>
+        </div>
+        <div class="faq-item border-t border-hair2">
+          <h3><button class="faq-q w-full flex justify-between items-start gap-6 pt-[26px] pb-[25px] text-left font-medium text-xl leading-[26px]" aria-expanded="false">
+            <span>Where do you ship?</span><span class="faq-icon w-10 text-right text-2xl font-normal flex-none" aria-hidden="true"></span></button></h3>
+          <div class="faq-a"><div class="overflow-hidden"><p class="pr-14 pb-11 text-[15px] leading-[22px] text-muted">Shipping destinations and dispatch times are listed at checkout.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer id="contact" class="bg-brand text-ftxt pt-16 md:pt-32 overflow-hidden">
+  <div class="mx-auto max-w-[1440px] px-5 md:px-10">
+    <div class="flex flex-col lg:flex-row justify-between gap-12 lg:gap-16">
+      <div class="w-full lg:w-[560px] max-w-full">
+        <h2 class="font-medium text-[clamp(34px,3.2vw,46px)] leading-[1.087] tracking-[-0.039em]">Research-grade peptides. Verified and documented.</h2>
+        <p class="mt-6 text-base leading-[1.6] text-ftxt/75">Questions about COAs, storage or handling? Our scientific support team gives clear, practical answers.</p>
+        <a href="mailto:help@altanresearch.com" class="mt-6 inline-flex items-center gap-3 h-12 pl-6 pr-1.5 rounded-full bg-ftxt text-brand font-medium text-[15px]">
+          <span>Contact us</span>
+          <span class="w-9 h-9 rounded-full bg-brand flex items-center justify-center" aria-hidden="true">
+            <svg viewBox="0 0 16 16" fill="none" class="w-4 h-4"><path d="M4.5 11.5l7-7M5.5 4.5h6v6" stroke="#fbf6ee" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+      </div>
+
+      <div class="flex flex-wrap gap-x-16 gap-y-10">
+        <nav aria-label="Shop">
+          <h3 class="flex items-center gap-2 mb-4 font-mono font-medium text-[11px] tracking-[0.12em] text-ftxt/75"><span class="w-[7px] h-[7px] bg-accent"></span>Shop</h3>
+          <ul class="flex flex-col gap-4 text-sm leading-[22px] text-ftxt/75">
+            <li><a class="hover:text-ftxt" href="#shop">All peptides</a></li><li><a class="hover:text-ftxt" href="#shop">Bundles</a></li><li><a class="hover:text-ftxt" href="#shop">New arrivals</a></li><li><a class="hover:text-ftxt" href="#shop">Lab supplies</a></li><li><a class="hover:text-ftxt" href="#shop">Best sellers</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Research">
+          <h3 class="flex items-center gap-2 mb-4 font-mono font-medium text-[11px] tracking-[0.12em] text-ftxt/75"><span class="w-[7px] h-[7px] bg-accent"></span>Research</h3>
+          <ul class="flex flex-col gap-4 text-sm leading-[22px] text-ftxt/75">
+            <li><a class="hover:text-ftxt" href="#test-results">Test results</a></li><li><a class="hover:text-ftxt" href="#test-results">COA lookup</a></li><li><a class="hover:text-ftxt" href="#">Janošik Laboratories</a></li><li><a class="hover:text-ftxt" href="#">Insights</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Company">
+          <h3 class="flex items-center gap-2 mb-4 font-mono font-medium text-[11px] tracking-[0.12em] text-ftxt/75"><span class="w-[7px] h-[7px] bg-accent"></span>Company</h3>
+          <ul class="flex flex-col gap-4 text-sm leading-[22px] text-ftxt/75">
+            <li><a class="hover:text-ftxt" href="#compliance">About Altan</a></li><li><a class="hover:text-ftxt" href="#">Bulk &amp; institutional</a></li><li><a class="hover:text-ftxt" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Legal">
+          <h3 class="flex items-center gap-2 mb-4 font-mono font-medium text-[11px] tracking-[0.12em] text-ftxt/75"><span class="w-[7px] h-[7px] bg-accent"></span>Legal</h3>
+          <ul class="flex flex-col gap-4 text-sm leading-[22px] text-ftxt/75">
+            <li><a class="hover:text-ftxt" href="#">Research use agreement</a></li><li><a class="hover:text-ftxt" href="#">Refunds &amp; returns</a></li><li><a class="hover:text-ftxt" href="#">Terms &amp; conditions</a></li><li><a class="hover:text-ftxt" href="#">Privacy policy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="mt-16 md:mt-20 flex flex-col lg:flex-row lg:items-end gap-10 lg:gap-16">
+      <div class="w-full lg:w-[560px] max-w-full p-6 border border-ftxt/[0.16] rounded-2xl">
+        <p class="font-medium text-xl leading-[26px] tracking-[-0.02em]">For research use only</p>
+        <p class="mt-2 text-xs leading-[1.5] text-ftxt/75">All Altan Research products are sold strictly for in vitro laboratory research to buyers aged 21 or older. They are not for human or veterinary use, have not been evaluated by the FDA, and are not dispensed by a compounding pharmacy (503A) or outsourcing facility (503B).</p>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-6 sm:gap-16">
+        <div><p class="font-mono font-medium text-[11px] tracking-[0.12em] uppercase text-accent">Support with orders</p><a class="block mt-2 text-base" href="mailto:orders@altanresearch.com">orders@altanresearch.com</a></div>
+        <div><p class="font-mono font-medium text-[11px] tracking-[0.12em] uppercase text-accent">Report an issue</p><a class="block mt-2 text-base" href="mailto:help@altanresearch.com">help@altanresearch.com</a></div>
+      </div>
+    </div>
+
+    <div class="mt-12 md:mt-20 pt-6 border-t border-ftxt/[0.16] flex flex-col sm:flex-row justify-between gap-3 text-xs leading-[18px]">
+      <span class="text-ftxt/55">© 2026 Altan Research. All rights reserved.</span>
+      <a href="#top" class="font-mono text-[11px] tracking-[0.06em] uppercase text-ftxt/75">Back to top &uarr;</a>
+    </div>
+
+    <div class="mt-8 md:mt-[49px] md:h-[270px] overflow-hidden" aria-hidden="true">
+      <img src="assets/logo-footer.svg" alt="" class="w-full h-auto md:mt-2">
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  // Products (placeholder data from the Figma frame)
+  var products = [
+    { name: 'BPC-157', price: 'From $59.99', purity: '99.1' },
+    { name: 'GHK-Cu', price: 'From $39.99', purity: '99.4' },
+    { name: 'Retatrutide', price: 'From $59.99', purity: '99.0' },
+    { name: 'TB-500', price: 'From $54.99', purity: '99.2' }
+  ];
+  var cart = 0, cartLink = document.querySelector('header a[href="#"]');
+  var ul = document.getElementById('products');
+  products.forEach(function (p) {
+    var li = document.createElement('li');
+    li.innerHTML =
+      '<div class="relative aspect-[296/340] rounded-[20px] overflow-hidden bg-tile">' +
+        '<img src="assets/product.jpg" width="296" height="340" alt="' + p.name + '" class="w-full h-full object-cover" loading="lazy">' +
+        '<button type="button" class="add absolute right-4 bottom-4 w-11 h-11 rounded-full bg-ink text-white text-2xl leading-none flex items-center justify-center hover:scale-110 transition" aria-label="Add ' + p.name + '">+</button>' +
+      '</div>' +
+      '<div class="mt-5 flex flex-col md:flex-row md:justify-between md:items-baseline gap-0.5 md:gap-3">' +
+        '<h3 class="font-medium text-lg md:text-[22px] leading-snug">' + p.name + '</h3>' +
+        '<span class="font-medium text-base whitespace-nowrap">' + p.price + '</span>' +
+      '</div>' +
+      '<p class="mt-1.5 text-[13px] text-muted">' + p.purity + '% purity &nbsp;·&nbsp; Research use only</p>';
+    li.querySelector('.add').addEventListener('click', function () { cart += 1; cartLink.textContent = 'Cart (' + cart + ')'; });
+    ul.appendChild(li);
+  });
+
+  // Mobile nav
+  var t = document.getElementById('navToggle'), nav = document.getElementById('nav');
+  t.addEventListener('click', function () {
+    var open = nav.classList.toggle('hidden') === false;
+    t.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { if (window.innerWidth < 768) { nav.classList.add('hidden'); t.setAttribute('aria-expanded', 'false'); } }); });
+
+  // FAQ accordion
+  var items = document.querySelectorAll('.faq-item');
+  items.forEach(function (item) {
+    item.querySelector('.faq-q').addEventListener('click', function () {
+      var willOpen = !item.classList.contains('faq-open');
+      items.forEach(function (o) { o.classList.remove('faq-open'); o.querySelector('.faq-q').setAttribute('aria-expanded', 'false'); });
+      if (willOpen) { item.classList.add('faq-open'); this.setAttribute('aria-expanded', 'true'); }
+    });
+  });
+
+  // Lot lookup (demo only)
+  document.getElementById('coaForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var v = document.getElementById('lot').value.trim();
+    document.getElementById('coaMsg').textContent = v
+      ? 'Preview only: lot lookup for "' + v + '" will connect to the COA database on the live site.'
+      : 'Enter a lot ID to search.';
+  });
+})();
+</script>
+</body>
+</html>
